@@ -1,0 +1,102 @@
+.RecommendedCourses{
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    --swiper-pagination-color: var(--color-main);
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .RecommendedCourses .swiper-slide {
+    text-align: start;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 !important;
+    border-radius: 4px !important;
+    align-items: start;
+    height: auto !important;
+  }
+  
+  .RecommendedCourses .swiper-pagination-bullets{
+    bottom: 0 !important;
+  }
+  
+  .RecommendedCourses .swiper-pagination-bullet{
+    width: 14px !important;
+    height: 14px !important;
+  }
+  
+  
+  .RecommendedCourses .swiper-button-next,
+  .RecommendedCourses .swiper-button-prev{
+    top: 50% !important;
+  }
+  
+  .RecommendedCourses .swiper-button-prev{
+    left: 0;
+  }
+  .RecommendedCourses .swiper-button-next{
+    right: 0;
+  }
+  
+  .RecommendedCourses .swiper-button-next:hover::after,
+  .RecommendedCourses .swiper-button-prev:hover::after{
+    background-color: #f9f9f9;
+    color: var(--color-main);
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .RecommendedCourses .swiper-button-prev::after, 
+  .RecommendedCourses .swiper-button-next::after{
+    font-size: 20px !important;
+    font-weight: bold;
+    background-color: var(--color-main);
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  
+  @media (min-width: 300px) and (max-width: 599px) {
+    .RecommendedCourses .swiper-button-next,
+    .RecommendedCourses .swiper-button-prev{
+      display: none;
+    }
+    .RecommendedCourses{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .RecommendedCourses .swiper-pagination-bullet {
+      width: 10px !important;
+      height: 10px !important;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 799px) {
+    .RecommendedCourses{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .RecommendedCourses .swiper-button-next,
+    .RecommendedCourses .swiper-button-prev{
+      display: none;
+    }
+    .RecommendedCourses .swiper-pagination-bullet {
+      width: 12px !important;
+      height: 12px !important;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .RecommendedCourses .swiper-pagination-bullet {
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+  
+  

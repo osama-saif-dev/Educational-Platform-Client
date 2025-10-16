@@ -1,0 +1,103 @@
+.popularSwiper{
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    --swiper-pagination-color: var(--color-main);
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .popularSwiper .swiper-slide {
+    text-align: start;
+    font-size: 18px;
+    
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 !important;
+    border-radius: 4px !important;
+    align-items: start;
+    height: auto !important;
+  }
+  
+  .popularSwiper .swiper-pagination-bullets{
+    bottom: 0 !important;
+  }
+  
+  .popularSwiper .swiper-pagination-bullet{
+    width: 14px !important;
+    height: 14px !important;
+  }
+  
+  
+  .popularSwiper .swiper-button-next,
+  .popularSwiper .swiper-button-prev{
+    top: 50% !important;
+  }
+  
+  .popularSwiper .swiper-button-prev{
+    left: 0;
+  }
+  .popularSwiper .swiper-button-next{
+    right: 0;
+  }
+  
+  .popularSwiper .swiper-button-next:hover::after,
+  .popularSwiper .swiper-button-prev:hover::after{
+    background-color: #f9f9f9;
+    color: var(--color-main);
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .popularSwiper .swiper-button-prev::after, 
+  .popularSwiper .swiper-button-next::after{
+    font-size: 20px !important;
+    font-weight: bold;
+    background-color: var(--color-main);
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  
+  @media (min-width: 300px) and (max-width: 599px) {
+    .popularSwiper .swiper-button-next,
+    .popularSwiper .swiper-button-prev{
+      display: none;
+    }
+    .popularSwiper{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .popularSwiper .swiper-pagination-bullet {
+      width: 10px !important;
+      height: 10px !important;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 799px) {
+    .popularSwiper{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .popularSwiper .swiper-button-next,
+    .popularSwiper .swiper-button-prev{
+      display: none;
+    }
+    .popularSwiper .swiper-pagination-bullet {
+      width: 12px !important;
+      height: 12px !important;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .popularSwiper .swiper-pagination-bullet {
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+  
+  
