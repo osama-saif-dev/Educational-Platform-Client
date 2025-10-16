@@ -1,5 +1,4 @@
 'use client'
-import Navbar from '@/components/Dashboard/Navbar'
 import NumbersInformation from '@/components/Dashboard/NumbersInformation'
 import React from 'react'
 import frame1 from '@/../public/Frame 322 (1).png';
@@ -18,7 +17,6 @@ import CourseOverView from '@/components/Dashboard/CourseOverView';
 export default function page() {
   return (
    <div className='px-4'>
-        <Navbar/>
         <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 mt-8'>
           <NumbersInformation icon={frame5} number='957' title='Enrolled Courses'/> 
           <NumbersInformation icon={frame6} number='19' title='Active Courses'/> 
